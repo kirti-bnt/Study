@@ -48,3 +48,37 @@ const goodbye={
 
 goodbye.bye()
 //this doesn't work in arrow function
+
+
+//Map Objects
+// using an Object as a key
+
+// creating objects 
+const wheat={name:'Wheat',cost:500}
+const rice={name:'Rice',cost:700}
+const dal={name:'Dal',cost:300}
+
+//creating new map object 
+const grocery=new Map();
+// Sets a value for a key in a Map object
+grocery.set(wheat,10);
+grocery.set(rice,9);
+grocery.set(dal,8);
+
+console.log('showing grocery: ', grocery)
+
+console.log(grocery.entries())
+// Returns an array of the key/value pairs in a Map object
+
+// Set Object
+// No duplictaes,can hold multiple data types
+// Create a Set
+const letters = new Set();
+
+// Add some values to the Set
+letters.add("a");
+letters.add("b");
+letters.add("a");
+letters.add("c");
+console.log('showing letterrs:',letters)
+
