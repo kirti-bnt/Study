@@ -9,9 +9,6 @@ Concepts and examples
 - Javascript
 - ES6
 - Typescript
-- React JS
-- Redux
-- React Bootstrap
 
 ## License
 
