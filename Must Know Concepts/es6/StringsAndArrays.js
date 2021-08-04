@@ -41,7 +41,53 @@ console.log('duplicates removed:',uniqueue)
 
 
 //.keys()
-
+//returns indexes as keys
 let fruits=['apple','banana','strawberry'];
 let idlist=fruits.keys()
 for(let id of idlist){console.log('Fruit key is :',id)}
+
+//.find()
+
+let products=[  
+    {
+        name:'Roundneck shirt',
+        color:'white',
+        cost:500
+    },
+    {
+        name:'T shirt',
+        color:'Black',
+        cost:400
+    },
+    {
+        name:'Scarf',
+        color:'Blue',
+        cost:205
+    }
+
+]
+
+let scarf_cost=products.find(findScarf).cost
+// let scarf_cost=products.find(findScarf) //prints whole scarf object
+function findScarf(scarf){
+    return scarf.name==='Scarf'
+}
+// function takes 3 arguments:
+// The item value
+// The item index
+// The array itself
+  
+console.log(scarf_cost)
+
+//fundIndex()
+//similar to array.find() but this return you index instead of array element
+
+let arrayList=[70,80,90,100]
+
+const data_90=arrayList.findIndex(find90);
+function find90(number){
+    return number===90
+}
+
+console.log('here is the data for 90: ',data_90) //2 
+
